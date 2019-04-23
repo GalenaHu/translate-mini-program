@@ -1,0 +1,9 @@
+<view class="container">
+ <view class='allClearButton' bindtap='clearAll'>清空历史纪录</view>
+  <view class='items' wx:for="{{history}}" bindtap='change' data-index="{{index}}">
+    <view class='fromString'  data-index="{{index}}">{{ item.fromString }}</view>
+    <view class='toString'  data-index="{{index}}">{{ item.toString }}</view>
+    <view class='itemClearButton' bindtap='onTapClear' data-clearbtn="{{index}}">×</view>
+  </view>
+ 
+</view>

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section">
+    <picker bindchange="bindFromChange" value="{{fromArrayIndex}}" range="{{fromArray}}">
+      <view class="picker">{{fromArray[fromArrayIndex]}}<view class='tri'> ▼</view></view>
+    </picker>
+    <view class='arrow'>→</view>
+    <picker bindchange="bindToChange" value="{{toArrayIndex}}" range="{{toArray}}">
+      <view class="picker">{{toArray[toArrayIndex]}}<view class='tri'> ▼</view></view>
+    </picker>
+  </view>
+  <view class='inputText'>
+  <textarea maxlength='100' placeholder='请输入翻译内容' value='{{query}}' bindconfirm='onConfirm' bindinput='onInput' auto-focus='true'></textarea>
+  <view class='clearButton' hidden='{{clearButtonHidden}}' bindtap='onTapClear'>×</view>
+  </view>
+  <view class='outputWrapper'  hidden="{{outputHidden}}"  bindtap='copyButton' data-text="{{output}}">
+    <view class="translateText"  data-text="{{output}}">{{output}}</view>
+    <view class='copyButton'  data-text="{{output}}">❏</view>
+  </view>
+</view>

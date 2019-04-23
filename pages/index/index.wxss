@@ -1,0 +1,59 @@
+/**index.wxss**/
+page {
+  box-sizing: border-box;
+}
+.container {
+  padding: 40rpx;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+}
+.section>picker,.section>view {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+.tri {
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: middle;
+}
+.inputText {
+  width: 100%;
+  display: flex;
+}
+textarea {
+  flex:1;
+  padding: 30rpx 0 0 30rpx;
+  height: 170px;
+}
+.clearButton {
+  width:35rpx;
+  padding-top: 20rpx;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.outputWrapper {
+  display: flex;
+  width: 100%;
+  border-top: 0.5px solid #dedede;  
+  box-sizing: border-box;
+}
+.translateText {
+  flex: 1;
+  word-wrap:break-word;
+  display: block;
+  padding: 30rpx;
+}
+
+.copyButton {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 20px;
+  padding-top: 25rpx;
+}
